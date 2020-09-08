@@ -6,30 +6,79 @@ html {line-height: 1.15;-webkit-text-size-adjust: 100%;}body {margin: 0;}main {d
     font-weight: normal;
   }
 
-  @font-face {
-    font-family: Cubao;
-    src: url(fonts/Cubao_Free_Wide.otf);
-    font-weight: bold;
-  }
+@font-face {
+  font-family: Cubao;
+  src: url(fonts/Cubao_Free_Wide.otf);
+  font-weight: bold;
+}
 
-  @font-face {
-    font-family: Cubao;
-    src: url(fonts/Cubao_Free_Narrow.otf);
-    font-weight: lighter;
-  }
+@font-face {
+  font-family: Cubao;
+  src: url(fonts/Cubao_Free_Narrow.otf);
+  font-weight: lighter;
+}
 
-  @font-face {
-    font-family: Dangwa;
-    src: url(fonts/Dangwa_Free.otf);
-    font-weight: normal;
-  }
+@font-face {
+  font-family: Dangwa;
+  src: url(fonts/Dangwa_Free.otf);
+  font-weight: normal;
+}
 
-  @font-face {
-    font-family: Quiapo;
-    src: url(fonts/Quiapo_Free.otf);
-    font-weight: normal;
-  }
+@font-face {
+  font-family: Quiapo;
+  src: url(fonts/Quiapo_Free.otf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Barabara;
+  src: url(fonts/Barabara.ttf);
+  font-weight: normal;
+}
 
 html {
-  font-size: 32px
+  font-size: 32px;
+}
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: Cubao;
+  font-size: 1.2rem;
+  padding: 30px 0px;
+  background-color: #f2d494
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+  color: inherit
+}
+
+a:focus {
+  border-bottom: solid 2px black
+}
+
+#agahan {
+  font-size: 2rem;
+  color: lime;
+  padding: 10px 20px;
+  background-color: black;
+}
+
+.nav {
+  font-family: Quiapo;
+  text-shadow: 2px 2px 0px white;
+  font-weight: bold;
+}
+
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.bread_image {
+  width: 100%
 }

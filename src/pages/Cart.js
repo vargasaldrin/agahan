@@ -5,8 +5,10 @@ import Footer from '../component/Footer'
 export default function Home() {
     return(
         <>
-            <Header></Header>
-            <Footer></Footer>
+            <h1>Cart Page</h1>
+            <div id="tiles">
+
+            </div>
         </>
     )
 }
