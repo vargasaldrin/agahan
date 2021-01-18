@@ -7,7 +7,7 @@ export default function Home() {
 
     const coffees = data.map(coffee => (
         <div className="card" key={coffee.id}>
-            <img className="bread_image" src={coffee.img} alt={coffee.name} />
+            <img className="bread_image" src={`./images/${coffee.img}`} alt={coffee.name} />
             <div className="bread_name">{coffee.name}</div>
         </div>
     ))

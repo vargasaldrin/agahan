@@ -5,6 +5,7 @@ import Coffee from './pages/Coffee'
 import Cart from './pages/Cart'
 import Header from './component/Header'
 import Footer from './component/Footer'
+import Product from './component/Product'
 
 import { Switch, Route } from 'react-router-dom'
 
@@ -16,7 +17,7 @@ function App() {
         <Route exact path="/">
           <Home />
         </Route>
-        <Route path="/bread">
+        <Route exact path="/bread">
           <Bread />
         </Route>
         <Route path="/coffee">
@@ -24,6 +25,9 @@ function App() {
         </Route>
         <Route path="/cart">
           <Cart />
+        </Route>
+        <Route path="/bread/:breadID">
+          <Product />
         </Route>
       </Switch>
       <Footer />

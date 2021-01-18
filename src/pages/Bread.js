@@ -1,6 +1,5 @@
 import React from 'react'
-import Header from '../component/Header'
-import Footer from '../component/Footer'
+import { Link } from 'react-router-dom'
 import data from '../data/breadData'
 
 export default function Home() {
@@ -10,10 +9,12 @@ export default function Home() {
     }
 
     const breads = data.map(bread => (
-        <div className="card" key={bread.id} onClick={handleClick}>
-            <img className="bread_image" src={bread.img} alt={bread.name} />
-            <div className="bread_name">{bread.name}</div>
-        </div>
+        <Link to={`/bread/${bread.id}`} key={bread.id}>
+            <div className="card" >
+                <img className="bread_image" src={`./images/${bread.img}`} alt={bread.name} />
+                <div className="bread_name">{bread.name}</div>
+            </div>
+        </Link>
     ))
 
     return (

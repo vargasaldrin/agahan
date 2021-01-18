@@ -5,8 +5,10 @@ function Provider(props) {
     const [cartItems, useCartItems] = useState([])
 
     return (
-        <ThemeContext.provider>
-            
-        </ThemeContext.provider>
+        <ThemeContext.Provider>
+            {props.children}
+        </ThemeContext.Provider>
     )
 }
+
+export { ThemeContext, Provider }
